@@ -35,4 +35,4 @@ In Task 4 I rebased. Git lifted my commit off, put the commits from GitHub under
 Running `git fetch` (or `git pull`) before starting work and before pushing. It shows what is already on the remote, so I can bring it in first instead of finding out when the push is rejected.
 
 ### 4. Which approach would I default to on a shared team branch, and why?
-Merge. A shared branch has commits other people may have already pulled, and rebasing rewrites commits, which can break their copies and force them to clean up. Merge never changes existing commits, so it is safer. I would use rebase only on my
+Merge. A shared branch has commits other people may have already pulled, and rebasing rewrites commits, which can break their copies and force them to clean up. Merge never changes existing commits, so it is safer. I would use rebase only on my own local commits that haven't been pushed yet, to keep the history tidy.
